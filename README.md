@@ -1,7 +1,7 @@
 # AoC2023_VM8
 
 Here is an attempt to solve the 2023 edition of the Advent of Code on my VM8 system:
-the VM8 is an 8-bit system with 64 Kbytes of ram, running its own development tools (ie. a simple disk operating system, an editor and a compiler).
+the VM8 is an 8-bit system with 64 Kbytes of ram, running its own development tools (ie. a simple disk operating system for the SDcard module, an editor and a compiler).
 ![image](https://github.com/Oric4ever/AoC2023_VM8/assets/42356653/592e8937-0359-4889-878d-0753d550bcc8)
 
 
