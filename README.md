@@ -2,6 +2,8 @@
 
 Here is an attempt to solve the 2023 edition of the Advent of Code on my VM8 system:
 the VM8 is an 8-bit system with 64 Kbytes of ram, running its own development tools (ie. a simple disk operating system for the SDcard module, an editor and a compiler).
+![image](https://github.com/Oric4ever/AoC2023_VM8/assets/42356653/4407e4ff-04f2-4330-8ece-fe08f1ee8f06)
+
 
 The system's performance is lower than the one of dedicated systems: because the processor (ATmega162) has an Harvard architecture, it cannot run native code from ram so actually it spends all its time interpreting the bytecodes produced by my Oberon compiler.
 But then this means that the system is able to dynamically load any program and interpret it from the ram.
