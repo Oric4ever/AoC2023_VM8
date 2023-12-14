@@ -80,8 +80,10 @@ PROCEDURE Lcm;
 BEGIN
   BigNum.FromInt(ghosts[1], lcm);
   FOR i := 2 TO nbOfGhosts DO
-    BigNum.FromInt(ghosts[i] DIV 271, x); (* there's currently a bug in BigNum.Div !! *)
-    BigNum.Mul(lcm, x, tmp, product);
+    BigNum.FromInt(ghosts[i], x);
+    Gcd(lcm, x, gcd);
+    BigNum.Div(x, gcd, tmp, quotient, remainder);
+    BigNum.Mul(lcm, quotient, tmp, product);
     lcm := product;
   END;
   BigNum.ToString(lcm, buf); Out.String(buf); Out.Ln;
